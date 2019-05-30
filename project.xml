@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<meta title="Candid Editor ALPHA" package="com.epocti.candidEditor" version="0.0.1a" company="Epocti" />
+	<app main="Main" path="export" file="CandidEditor" />
+	<source path="Source" />
+	<haxelib name="openfl" />
+	<icon path="assets/icon.png" />
+	<assets path="assets" rename="assets" />
+	<window allow-high-dpi="false"/>
+</project>
