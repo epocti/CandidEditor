@@ -21,6 +21,7 @@ class Common {
 	public static var secondaryColor:Int = 0xFFFFFFFF;
 
 	public static var controlKeyDown:Bool = false;
+	public static var shiftKeyDown:Bool = false;
 	public static var mouseWheelZooms:Bool = true;
 
 	public static function saveWindowPositions():Void {
