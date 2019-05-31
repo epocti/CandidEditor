@@ -54,8 +54,8 @@ class Main extends Sprite {
 		addChild(Common.colorsWindow);
 
 		// New Canvas Window
-		//Common.newCanvasWindow = new NewCanvasWindow();
-		//addChild(Common.newCanvasWindow);
+		Common.newCanvasWindow = new NewCanvasWindow();
+		addChild(Common.newCanvasWindow);
 
 		// Menu
 		Common.menuWindow = new MenuWindow(stage.stageWidth);

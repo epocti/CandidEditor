@@ -3,6 +3,7 @@ package gui;
 import openfl.text.TextFormat;
 import openfl.text.TextFieldAutoSize;
 import openfl.text.TextField;
+import openfl.text.TextFieldType;
 import openfl.display.Sprite;
 
 class Label extends Sprite {
@@ -40,5 +41,6 @@ class Label extends Sprite {
 
 	public function enableEditing(){
 		textField.selectable = true;
+		textField.type = TextFieldType.INPUT;
 	}
 }
