@@ -26,7 +26,7 @@ class StatusBar extends Sprite {
 		zoomLabel.y = 0;
 		addChild(zoomLabel);
 
-		toolLabel = new Label("Brush Tool");
+		toolLabel = new Label("Brush");
 		toolLabel.x = 100;
 		toolLabel.y = 0;
 		addChild(toolLabel);
