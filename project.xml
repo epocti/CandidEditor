@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
-	<meta title="Candid Editor ALPHA" package="com.epocti.candidEditor" version="0.0.1a" company="Epocti" />
+	<meta title="Candid Editor ALPHA" package="com.epocti.candidEditor" version="0.0.2-1a" company="Epocti" />
 	<app main="Main" path="export" file="CandidEditor" />
 	<source path="source" />
 	<haxelib name="openfl" />

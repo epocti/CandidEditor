@@ -27,6 +27,6 @@ class Common {
 	public static function saveWindowPositions():Void {
 		preferences.data.lastToolWindowPos = toolWindow.getPosition();
 		preferences.data.lastColorsWindowPos = colorsWindow.getPosition();
-		preferences.data.lastNewCanvasWindowPos = newCanvasWindow.getPosition();
+		//preferences.data.lastNewCanvasWindowPos = newCanvasWindow.getPosition();
 	}
 }
