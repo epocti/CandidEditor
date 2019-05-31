@@ -5,6 +5,7 @@ import views.*;
 
 class Common {
 	public static var preferences:SharedObject;
+	public static var enableAnimations:Bool = true;
 	public static var currentTool:String = "brush";
 
 	public static var cursorIsOnCanvas:Bool = false;

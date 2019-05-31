@@ -4,6 +4,7 @@
 	<app main="Main" path="export" file="CandidEditor" />
 	<source path="source" />
 	<haxelib name="openfl" />
+	<haxelib name="actuate" />
 	<icon path="assets/icon.png" />
 	<assets path="assets" rename="assets" />
 	<window allow-high-dpi="false"/>

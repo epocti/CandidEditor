@@ -96,8 +96,8 @@ class Canvas extends Sprite {
 		else canvas.smoothing = true;
 
 		// Zoom to mouse location
-		this.x = Std.int((stage.mouseX) - (this.x));
-		this.y = Std.int((stage.mouseY) - (this.y));
+		//this.x = Std.int((stage.mouseX) - (this.x));
+		//this.y = Std.int((stage.mouseY) - (this.y));
 
 		// Update status bar's zoom info
 		Common.statusBar.setZoomLevel(scaleX * 100);
