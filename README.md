@@ -1,5 +1,7 @@
 ![header](https://raw.githubusercontent.com/kokoscript/CandidEditor/master/assets/logo-header.png)
 ## An OpenFL-based, crossplatform image editing tool
+![GitHub top language](https://img.shields.io/github/languages/top/kokoscript/CandidEditor.svg?color=orange) ![GitHub](https://img.shields.io/github/license/kokoscript/CandidEditor.svg?style=flat) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](code-of-conduct.md)
+
 
 *Note: It is generous to say that Candid Editor is in an alpha state. Many features are currently unimplemented, several issues exist within the project that may go unrectified for a while, and breaking refactors may occur at any time. Use in production at your own risk.*
 
@@ -22,7 +24,7 @@ Not yet implemented:
 Editor depends on the latest versions of OpenFL and Lime. To install these, run `haxelib install openfl` and `haxelib install lime`. Afterwards, run `haxelib run lime setup` and `haxelib run openfl setup` to make sure the commandline tools as well as any extra dependencies for the two are installed.
 
 To build and run Editor from source, `cd` to the root of the project (where `project.xml` is located) and run the command that corresponds to your platform:
-* `lime test macos` - requires that you have Xcode installed
+* `lime test mac` - requires that you have Xcode installed
 * `lime test linux` - requires that you have g++ installed
 * `lime test windows` - requires that you have Visual Studio installed with C++/Win32 support
 
