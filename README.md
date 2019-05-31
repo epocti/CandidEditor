@@ -19,7 +19,7 @@ Not yet implemented:
 ## Building
 (These instructions assume that you are new to the Haxe scene, so they may seem a little redundant for some.)
 
-Editor depends on the latest versions of OpenFL and Lime. Because OpenFL requires Lime itself, installing these dependencies is as simple as running `haxelib install openfl`. Afterwards, run `haxelib run lime setup` as well as `haxelib run openfl setup` to make sure the commandline tools as well as any extra dependencies for the two are installed.
+Editor depends on the latest versions of OpenFL and Lime. To install these, run `haxelib install openfl` and `haxelib install lime`. Afterwards, run `haxelib run lime setup` and `haxelib run openfl setup` to make sure the commandline tools as well as any extra dependencies for the two are installed.
 
 To build and run Editor from source, `cd` to the root of the project (where `project.xml` is located) and run the command that corresponds to your platform:
 * `lime test macos` - requires that you have Xcode installed
