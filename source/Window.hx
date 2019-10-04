@@ -7,7 +7,9 @@ import openfl.geom.Point;
 import openfl.display.BitmapData;
 import openfl.display.Bitmap;
 import openfl.display.Sprite;
+import openfl.display.Shape;
 import gui.Label;
+import openfl.Lib;
 
 class Window extends Sprite {
 	var titleText:String;
@@ -19,7 +21,7 @@ class Window extends Sprite {
 
 	var window:Bitmap;
 
-	public function new(width:Int = 64, height:Int = 64, title:String = "Window", backColor:Int = 0xFFFFFFFF){
+	public function new(width:Int = 64, height:Int = 64, title:String = "Window", backColor:Int = 0xFFFFFFFF, isModal:Bool = false){
 		super();
 
 		windowWidth = width;

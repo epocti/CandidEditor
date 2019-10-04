@@ -115,71 +115,61 @@ class ToolWindow extends Window {
 	}
 
 	function onSelToolButtonClick(evt:MouseEvent){
-		Common.currentTool = "select";
-		Common.statusBar.updateTool("Selection Tool");
+		updateTool("select", "Rectangular Select");
 	}
 	function onCircleSelToolButtonClick(evt:MouseEvent){
-		Common.currentTool = "circleSelect";
-		Common.statusBar.updateTool("Circular Selection Tool");
+		updateTool("circleSelect", "Circular Select");
 	}
 	function onLassoToolButtonClick(evt:MouseEvent){
-		Common.currentTool = "lasso";
-		Common.statusBar.updateTool("Lasso");
+		updateTool("lasso", "Lasso Select");
 	}
 	function onMoveToolButtonClick(evt:MouseEvent){
-		Common.currentTool = "move";
-		Common.statusBar.updateTool("Move Tool");
+		updateTool("move", "Move");
 	}
 	function onMoveSelToolButtonClick(evt:MouseEvent){
-		Common.currentTool = "moveSel";
-		Common.statusBar.updateTool("Move Selection Tool");
+		updateTool("moveSel", "Move Selection");
 	}
 	function onZoomToolButtonClick(evt:MouseEvent){
-		Common.currentTool = "zoom";
-		Common.statusBar.updateTool("Zoom Tool");
+		updateTool("zoom", "Zoom Tool");
 	}
 	function onWandToolButtonClick(evt:MouseEvent){
-		Common.currentTool = "wand";
-		Common.statusBar.updateTool("Wand Select Tool");
+		updateTool("wand", "Wand Select");
 	}
 	function onBucketToolButtonClick(evt:MouseEvent){
-		Common.currentTool = "bucket";
-		Common.statusBar.updateTool("Fill Bucket");
+		updateTool("bucket", "Fill Bucket");
 	}
 	function onGradientToolButtonClick(evt:MouseEvent){
-		Common.currentTool = "gradient";
-		Common.statusBar.updateTool("Gradient Tool");
+		updateTool("gradient", "Gradient Tool");
 	}
 	function onEyedropperToolButtonClick(evt:MouseEvent){
-		Common.currentTool = "eyedropper";
-		Common.statusBar.updateTool("Eyedropper");
+		updateTool("eyedropper", "Eyedropper");
 	}
 	function onBrushToolButtonClick(evt:MouseEvent){
-		Common.currentTool = "brush";
-		Common.statusBar.updateTool("Brush");
+		updateTool("brush", "Brush");
 	}
 	function onPencilToolButtonClick(evt:MouseEvent){
-		Common.currentTool = "pencil";
-		Common.statusBar.updateTool("Pen");
+		updateTool("pencil", "Pen");
 	}
 	function onEraserToolButtonClick(evt:MouseEvent){
-		Common.currentTool = "eraser";
-		Common.statusBar.updateTool("Eraser");
+		updateTool("eraser", "Eraser");
 	}
 	function onTextToolButtonClick(evt:MouseEvent){
-		Common.currentTool = "text";
-		Common.statusBar.updateTool("Text Tool");
+		updateTool("text", "Text Tool");
 	}
 	function onLineToolButtonClick(evt:MouseEvent){
-		Common.currentTool = "line";
-		Common.statusBar.updateTool("Line Tool");
+		updateTool("line", "Line Tool");
 	}
 	function onShapeToolButtonClick(evt:MouseEvent){
-		Common.currentTool = "shape";
-		Common.statusBar.updateTool("Shape Tool");
+		updateTool("shape", "Shape Tool");
 	}
 	function onPawToolButtonClick(evt:MouseEvent){
-		Common.currentTool = "paw";
-		Common.statusBar.updateTool("Paw Tool");
+		updateTool("paw", "Paw Tool");
+	}
+
+	function updateTool(id:String, name:String):Void {
+		if(!Common.modalWindowOpen){
+			Common.currentTool = id;
+			Common.statusBar.updateTool(name);
+		}
 	}
 }

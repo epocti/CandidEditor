@@ -16,6 +16,8 @@ class Common {
 	public static var newCanvasWindow:Window;
 	public static var menuWindow:MenuWindow;
 
+	public static var modalWindowOpen:Bool = false;
+
 	public static var statusBar:StatusBar;
 
 	public static var primaryColor:Int = 0xFF000000;

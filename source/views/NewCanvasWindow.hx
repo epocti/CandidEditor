@@ -15,7 +15,7 @@ class NewCanvasWindow extends Window {
 	var testTextEntry:TextEntry = new TextEntry(new Label("Text Input"));
 
 	public function new(){
-		super(450, 300, "New Canvas...", 0xFF101010);
+		super(450, 300, "New Canvas...", 0xFF101010, true);
 		if(Common.preferences.data.lastNewCanvasWindowPos != null) this.setPosition(Common.preferences.data.lastNewCanvasWindowPos);
 		else this.setPosition(new Point(0, 100));
 
